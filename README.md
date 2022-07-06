@@ -3,3 +3,6 @@
 ![Stars](https://img.shields.io/github/stars/davitmartirosyan/42-yerevan-minitalk)
 ![Licence](https://img.shields.io/github/license/davitmartirosyan/42-yerevan-minitalk)
 ![Issues](https://img.shields.io/github/issues/davitmartirosyan/42-yerevan-minitalk)
+
+
+## 🇦🇲 
