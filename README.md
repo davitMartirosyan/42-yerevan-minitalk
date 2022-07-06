@@ -5,4 +5,4 @@
 ![Issues](https://img.shields.io/github/issues/davitmartirosyan/42-yerevan-minitalk)
 
 
-## 🇦🇲 
+## 🖥 -> 🖥 This project will discover how to communicate between two processes on UNIX based operating systems.
