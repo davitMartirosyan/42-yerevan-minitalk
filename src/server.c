@@ -10,47 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <signal.h>
 
-void handle_sigusr1(int n)
-{
-    printf("Remember thaht multiplication is repetitive addition\n");
-}
+#include "../includes/minitalk.h"
 
-int main(int argc, char* argv[])
+int main(void)
 {
     int pid = fork();
-    if (pid == -1)
-    {
-        return (1);
-    }
-
     if(pid == 0)
     {
         sleep(5);
-        kill(getppid(), SIGUSR1);
+        kill(getppid(), SIGSEGV);
     }
-    else
-    {
-        struct sigaction sa;
-        sa.sa_flags = SA_RESTART;
-        sa.sa_handler = &handle_sigusr1;
-        sigaction(SIGUSR1, &sa, NULL);
+    else{
+        while(1)
+        {
+            printf("1\n");
+            sleep(1);
+        }
+    }
 
-        int x;
-        printf("What is the result of 3 x 5: ");
-        scanf("%d", &x);
-        if(x == 15)
-        {
-            printf("Right");
-        }
-        else
-        {
-            printf("Wrong");
-        }
-    }
 }

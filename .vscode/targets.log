@@ -1,0 +1,314 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+ 
+# Built for x86_64-pc-linux-gnu
+ 
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
+# This is free software: you are free to change and redistribute it.
+ 
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+ 
+# Make data base, printed on Fri Jul  8 03:22:34 2022
+ 
+
+# Variables
+ 
+
+ 
+# environment
+ 
+LC_ALL = C
+ 
+# makefile (from 'Makefile', line 3)
+ 
+SRC = src/
+ 
+# makefile (from 'Makefile', line 1)
+ 
+CLIENT = client
+ 
+# environment
+ 
+VSCODE_CWD = /home/dmartiro
+ 
+# default
+ 
+MAKE_COMMAND := make
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/dmartiro/42-yerevan-minitalk
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 4)
+LIBFT = libft.a
+# environment
+LANG = C
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/dmartiro/42-yerevan-minitalk
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from 'Makefile', line 5)
+LIBC = -L./libft -lft
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/dmartiro/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+SSH_CLIENT = 10.0.2.2 53321 4242
+# makefile (from 'Makefile', line 2)
+SERVER = server
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = /home/dmartiro/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
+# environment
+LOGNAME = dmartiro
+# makefile
+.DEFAULT_GOAL := all
+# environment
+USER = dmartiro
+# default
+MAKE_VERSION := 4.3
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+VSCODE_AGENT_FOLDER = /home/dmartiro/.vscode-server
+# environment
+_ = /home/dmartiro/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-6dd69804-9ad5-4d38-9811-7f37959b9cc3.sock
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/dmartiro
+# environment
+XDG_SESSION_ID = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 6)
+CC = gcc
+# makefile (from 'Makefile', line 7)
+CC_FLAGS = -Wall -Wextra -Werror
+# environment
+SSH_CONNECTION = 10.0.2.2 53321 10.0.2.15 4242
+# variable set hash-table stats:
+# Load=73/1024=7%, Rehash=0, Collisions=8/117=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src (device 2056, inode 137183): No files, no impossibilities so far.
+# . (device 2056, inode 134086): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+src/%.o: src/%.c includes/minitalk.h
+#  recipe to execute (from 'Makefile', line 22):
+	@$(CC) $(CC_FLAGS) -c  $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+client: src/client.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	@$(CC) $(SRC)client.o $(LIBC) -o $@
+
+# Not a target:
+src/server.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/client.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libft.a:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := libft.a
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 13):
+	@make -C libft
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-08 03:22:27.199411383
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/handlers.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+server: src/server.o src/handlers.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	@$(CC) $(SRC)server.o $(SRC)handlers.o $(LIBC) -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: libft.a server client
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 10):
+	@rm -f $(SRC)*.o
+
+fclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	@make fclean -C libft
+	@rm -f $(SERVER) $(CLIENT)
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=11/1024=1%, Rehash=0, Collisions=0/32=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 24 / storage = 217 B / avg = 9 B
+# current buf: size = 8162 B / used = 217 B / count = 24 / avg = 9 B
+
+# strcache performance: lookups = 40 / hit rate = 40%
+# hash-table stats:
+# Load=24/8192=0%, Rehash=0, Collisions=0/40=0%
+# Finished Make data base on Fri Jul  8 03:22:34 2022
+
+ 

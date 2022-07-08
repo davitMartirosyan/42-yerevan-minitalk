@@ -1,11 +1,11 @@
+#ifndef MINITALK_H
+#define MINITALK_H
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
+#include "../libft/libft.h"
 
-int main(int argc, char argv[])
-{
-    
-    return (0);
-}
+void PID(void);
+#endif
