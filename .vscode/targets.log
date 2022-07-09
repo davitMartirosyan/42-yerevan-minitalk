@@ -13,7 +13,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
  
 
  
-# Make data base, printed on Fri Jul  8 05:09:16 2022
+# Make data base, printed on Sat Jul  9 01:38:35 2022
  
 
 # Variables
@@ -37,23 +37,39 @@ CLIENT = client
 VSCODE_CWD = /home/dmartiro
  
 # default
+ 
 MAKE_COMMAND := make
+ 
 # environment
+ 
 VSCODE_HANDLES_SIGPIPE = true
+ 
 # automatic
+ 
 @D = $(patsubst %/,%,$(dir $@))
+ 
 # environment
+ 
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+ 
 # default
+ 
 .VARIABLES := 
+ 
 # environment
+ 
 PWD = /home/dmartiro/42-yerevan-minitalk
+ 
 # automatic
+ 
 %D = $(patsubst %/,%,$(dir $%))
+ 
+# environment
+ 
+OLDPWD = /home/dmartiro/.vscode-server/bin/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+ 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # makefile (from 'Makefile', line 4)
@@ -68,12 +84,10 @@ LANG = C
 MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/dmartiro/42-yerevan-minitalk
-# environment
-VSCODE_PIPE_LOGGING = true
 # makefile (from 'Makefile', line 5)
 LIBC = -L./libft -lft
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -86,8 +100,6 @@ MFLAGS = -pqrR
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
@@ -111,7 +123,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/dmartiro/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+PATH = /home/dmartiro/.vscode-server/bin/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9/bin/remote-cli:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 # default
 MAKEFILES := 
 # environment
@@ -119,11 +131,9 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-SSH_CLIENT = 10.0.2.2 53321 4242
+SSH_CLIENT = 10.0.2.2 62249 4242
 # makefile (from 'Makefile', line 2)
 SERVER = server
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -133,7 +143,7 @@ LS_COLORS =
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
-BROWSER = /home/dmartiro/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
+BROWSER = /home/dmartiro/.vscode-server/bin/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9/bin/helpers/browser.sh
 # environment
 LOGNAME = dmartiro
 # makefile
@@ -143,21 +153,21 @@ USER = dmartiro
 # default
 MAKE_VERSION := 4.3
 # environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
-# environment
 VSCODE_AGENT_FOLDER = /home/dmartiro/.vscode-server
 # environment
-_ = /home/dmartiro/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+_ = /home/dmartiro/.vscode-server/bin/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9/node
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-90a043a9-af28-4228-a311-f8b5a8a845f0.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-5ecbd1fe-f1a5-4d41-92c9-e0ffec0b2098.sock
 # environment
 XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/dmartiro
+# environment
+ELECTRON_RUN_AS_NODE = 1
 # environment
 XDG_SESSION_ID = 1
 # default
@@ -173,9 +183,9 @@ CC = gcc
 # makefile (from 'Makefile', line 7)
 CC_FLAGS = -Wall -Wextra -Werror
 # environment
-SSH_CONNECTION = 10.0.2.2 53321 10.0.2.15 4242
+SSH_CONNECTION = 10.0.2.2 62249 10.0.2.15 4242
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=8/117=7%
+# Load=70/1024=7%, Rehash=0, Collisions=8/115=7%
 
 # Pattern-specific Variable Values
 
@@ -184,9 +194,9 @@ SSH_CONNECTION = 10.0.2.2 53321 10.0.2.15 4242
 # Directories
 
 # src (device 2056, inode 137183): No files, no impossibilities so far.
-# . (device 2056, inode 134086): 9 files, no impossibilities.
+# . (device 2056, inode 134086): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 2 directories.
+# 10 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -197,12 +207,12 @@ src/%.o: src/%.c includes/minitalk.h
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
-client: src/client.o
+client: src/client.o src/handlers.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 19):
-	@$(CC) $(SRC)client.o $(LIBC) -o $@
+	@$(CC) $(SRC)client.o  $(SRC)handlers.o $(LIBC) -o $@
 
 # Not a target:
 src/server.o:
@@ -211,9 +221,7 @@ src/server.o:
 #  File has not been updated.
 
 # Not a target:
- 
 src/client.o:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -228,9 +236,13 @@ libft.a:
 # @ := libft.a
 # automatic
 # * := 
+ 
 # automatic
+ 
 # < := 
+ 
 # automatic
+ 
 # + := 
 # automatic
 # % := 
@@ -248,7 +260,7 @@ libft.a:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-08 03:22:27.199411383
+#  Last modified 2022-07-09 01:38:26.459960756
 #  File has been updated.
 #  Successfully updated.
 
@@ -297,7 +309,7 @@ fclean:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/32=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/33=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -307,9 +319,9 @@ fclean:
 # strcache buffers: 1 (0) / strings = 24 / storage = 217 B / avg = 9 B
 # current buf: size = 8162 B / used = 217 B / count = 24 / avg = 9 B
 
-# strcache performance: lookups = 39 / hit rate = 38%
+# strcache performance: lookups = 41 / hit rate = 41%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/39=0%
-# Finished Make data base on Fri Jul  8 05:09:16 2022
+# Load=24/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Sat Jul  9 01:38:35 2022
 
  

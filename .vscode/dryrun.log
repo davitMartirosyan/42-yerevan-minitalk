@@ -1,0 +1,15 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/dmartiro/42-yerevan-minitalk'
+ 
+make -C libft
+ 
+gcc src/server.o src/handlers.o -L./libft -lft -o server
+ 
+gcc -Wall -Wextra -Werror -c  src/client.c -o src/client.o
+ 
+gcc src/client.o  src/handlers.o -L./libft -lft -o client
+ 
+rm -f src/*.o
+ 
+make: Leaving directory '/home/dmartiro/42-yerevan-minitalk'
+ 

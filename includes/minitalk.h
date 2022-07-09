@@ -7,5 +7,5 @@
 #include <signal.h>
 #include "../libft/libft.h"
 
-void PID(void);
+void pid(void);
 #endif

@@ -1,6 +1,6 @@
 #include "../includes/minitalk.h"
 
-void PID(void)
+void pid(void)
 {
     char *pid;
 

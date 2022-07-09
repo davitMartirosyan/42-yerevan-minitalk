@@ -13,20 +13,21 @@
 
 #include "../includes/minitalk.h"
 
+void bits(int i)
+{
+    printf("%d\n", i);
+}
+
 int main(void)
 {
-    int pid = fork();
-    if(pid == 0)
+    struct sigaction synack;
+    synack.sa_handler = &bits;
+    sigaction(SIGUSR1, &synack, NULL);
+    sigaction(SIGUSR2, &synack, NULL);
+    pid();
+    while(1)
     {
-        sleep(5);
-        kill(getppid(), SIGSEGV);
-    }
-    else{
-        while(1)
-        {
-            printf("1\n");
-            sleep(1);
-        }
-    }
 
+        pause();
+    }
 }
