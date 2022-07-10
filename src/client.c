@@ -6,7 +6,7 @@
 // SIGUSR1 -> 30 -> 1
 // SIGUSR2 -> 31 -> 0
 
-static void send_data(int id, char *data)
+ void send_data(int id, char *data)
 {
     int i;
     char c;

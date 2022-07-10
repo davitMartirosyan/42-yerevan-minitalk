@@ -19,7 +19,7 @@ $(CLIENT) : $(SRC)client.o $(SRC)handlers.o
 	@$(CC) $(SRC)client.o  $(SRC)handlers.o $(LIBC) -o $@
 
 $(SRC)%.o : $(SRC)%.c includes/minitalk.h
-	@$(CC) $(CC_FLAGS) -c  $< -o $@
+	@$(CC) -c  $< -o $@
 
 fclean : 
 	@make fclean -C libft

@@ -1,73 +1,37 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Sat Jul  9 01:38:35 2022
- 
+# Make data base, printed on Sun Jul 10 06:33:15 2022
 
 # Variables
- 
 
- 
 # environment
- 
 LC_ALL = C
- 
 # makefile (from 'Makefile', line 3)
- 
 SRC = src/
- 
 # makefile (from 'Makefile', line 1)
- 
 CLIENT = client
- 
 # environment
- 
 VSCODE_CWD = /home/dmartiro
- 
 # default
- 
 MAKE_COMMAND := make
- 
 # environment
- 
 VSCODE_HANDLES_SIGPIPE = true
- 
 # automatic
- 
 @D = $(patsubst %/,%,$(dir $@))
- 
 # environment
- 
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
- 
 # default
- 
 .VARIABLES := 
- 
 # environment
- 
 PWD = /home/dmartiro/42-yerevan-minitalk
- 
 # automatic
- 
 %D = $(patsubst %/,%,$(dir $%))
- 
-# environment
- 
-OLDPWD = /home/dmartiro/.vscode-server/bin/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
- 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
@@ -131,7 +95,7 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-SSH_CLIENT = 10.0.2.2 62249 4242
+SSH_CLIENT = 10.0.2.2 58418 4242
 # makefile (from 'Makefile', line 2)
 SERVER = server
 # automatic
@@ -159,7 +123,7 @@ _ = /home/dmartiro/.vscode-server/bin/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9/n
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-5ecbd1fe-f1a5-4d41-92c9-e0ffec0b2098.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-2ed59567-8ad5-47f2-8b9a-14a6c859efca.sock
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -169,7 +133,7 @@ HOME = /home/dmartiro
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-XDG_SESSION_ID = 1
+XDG_SESSION_ID = 5
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -183,9 +147,9 @@ CC = gcc
 # makefile (from 'Makefile', line 7)
 CC_FLAGS = -Wall -Wextra -Werror
 # environment
-SSH_CONNECTION = 10.0.2.2 62249 10.0.2.15 4242
+SSH_CONNECTION = 10.0.2.2 58418 10.0.2.15 4242
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=8/115=7%
+# Load=69/1024=7%, Rehash=0, Collisions=8/114=7%
 
 # Pattern-specific Variable Values
 
@@ -193,16 +157,16 @@ SSH_CONNECTION = 10.0.2.2 62249 10.0.2.15 4242
 
 # Directories
 
-# src (device 2056, inode 137183): No files, no impossibilities so far.
-# . (device 2056, inode 134086): 10 files, no impossibilities.
+# src (device 2056, inode 134946): No files, no impossibilities so far.
+# . (device 2056, inode 134086): 11 files, no impossibilities.
 
-# 10 files, no impossibilities in 2 directories.
+# 11 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 src/%.o: src/%.c includes/minitalk.h
 #  recipe to execute (from 'Makefile', line 22):
-	@$(CC) $(CC_FLAGS) -c  $< -o $@
+	@$(CC) -c  $< -o $@
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
@@ -236,13 +200,9 @@ libft.a:
 # @ := libft.a
 # automatic
 # * := 
- 
 # automatic
- 
 # < := 
- 
 # automatic
- 
 # + := 
 # automatic
 # % := 
@@ -260,7 +220,7 @@ libft.a:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-09 01:38:26.459960756
+#  Last modified 2022-07-10 05:40:21.615992449
 #  File has been updated.
 #  Successfully updated.
 
@@ -319,9 +279,10 @@ fclean:
 # strcache buffers: 1 (0) / strings = 24 / storage = 217 B / avg = 9 B
 # current buf: size = 8162 B / used = 217 B / count = 24 / avg = 9 B
 
-# strcache performance: lookups = 41 / hit rate = 41%
+# strcache performance: lookups = 42 / hit rate = 42%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Sat Jul  9 01:38:35 2022
+ 
+# Load=24/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Sun Jul 10 06:33:15 2022
 
  
