@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmartiro <dmartiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/04 15:10:46 by dmartiro          #+#    #+#             */
-/*   Updated: 2022/07/15 19:02:32 by dmartiro         ###   ########.fr       */
+/*   Created: 2022/07/15 18:12:18 by dmartiro          #+#    #+#             */
+/*   Updated: 2022/07/15 18:13:27 by dmartiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "../includes/minitalk.h"
+#include <math.h>
+int convert(long long n) {
+  int dec = 0, i = 0, rem;
 
-static void	handle(int sig)
-{
-    //01000001 -> A
-    //
-    unsigned char bits;
-    
-    
-    if(sig == SIGUSR1)
-        write(1, "1", 1);
-    else if(sig == SIGUSR2)
-        write(1, "0", 1);
+  while (n!=0) {
+    rem = n % 10;
+    n /= 10;
+    dec += rem * pow(2, i);
+    ++i;
+  }
+
+  return dec;
 }
-
 
 int main(void)
 {
-   	pid();
-	signal(SIGUSR1, handle);
-	signal(SIGUSR2, handle);
-	while (1)
-		pause();
-
+    printf("%d", convert(01000001));
 }

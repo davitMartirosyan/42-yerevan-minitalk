@@ -30,7 +30,6 @@ int main(int argc, char **argv)
 {
     char *data;
     int id;
-
     if(argc != 3)
         return (-1);
     data = argv[2];
