@@ -1,39 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dmartiro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/15 19:46:28 by dmartiro          #+#    #+#             */
+/*   Updated: 2022/07/15 19:46:31 by dmartiro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/minitalk.h"
-//on LINUX
-// SIGUSR1 -> 10 -> 1
-// SIGUSR2 -> 12 -> 0
-//on MAC
-// SIGUSR1 -> 30 -> 1
-// SIGUSR2 -> 31 -> 0
 
- void send_data(int id, char *data)
+int	main(int argc, char **argv)
 {
-    int i;
-    char c;
+	char	*data;
+	int		id;
 
-    while(*data)
-    {
-        i = 8;
-        c = *data++;
-        while(i--)
-        {
-            if(c >> i & 1)
-                kill(id, SIGUSR1);
-            else
-                kill(id, SIGUSR2);
-            usleep(100);
-        }
-    }
-}
-
-int main(int argc, char **argv)
-{
-    char *data;
-    int id;
-    if(argc != 3)
-        return (-1);
-    data = argv[2];
-    id = ft_atoi(argv[1]);
-    send_data(id, data);
-    return (0);
+	if (argc != 3)
+		return (-1);
+	data = argv[2];
+	id = ft_atoi(argv[1]);
+	send_data(id, data);
+	return (0);
 }
