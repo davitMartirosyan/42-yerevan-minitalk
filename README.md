@@ -40,4 +40,7 @@ The minitalk project discover how to create a communication between two terminal
 
 #### Cloning Process
 
-- Download [`libft`](https://github.com/davitmartirosyan/42-yerevan-libft) package from my github profile 
+- Clone [`minitalk`](https://github.com/davitmartirosyan/42-yerevan-minitalk) repository.
+- Clone [`libft`](https://github.com/davitmartirosyan/42-yerevan-libft) package from my github profile.
+- Put the libft repo to the Cloned minitalk repository.
+- Run [`make`] command in main directory. ($ > make).
