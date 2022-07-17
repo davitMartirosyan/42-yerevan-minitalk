@@ -1,4 +1,4 @@
-# 🖥 -> 🖥 42-yerevan-minitalk
+# 🖥-🖥 42-yerevan-minitalk
 
 ![Contributors](https://img.shields.io/github/contributors/davitmartirosyan/42-yerevan-minitalk)
 ![Forks](https://img.shields.io/github/forks/davitmartirosyan/42-yerevan-minitalk)
